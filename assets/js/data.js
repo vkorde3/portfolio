@@ -144,7 +144,7 @@ data = {
 			],
         },{
             "title": "Campus Ambassador, National Engineering Olympiad",
-            "from": "March",
+            "from": "March 2020",
             "to": "April 2020",
             "logo": "COEP.webp",
             "desc": ["Encouraged participation in the Olympiad across multiple schools and departments, promoting a competitive spirit.",
