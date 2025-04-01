@@ -36,6 +36,19 @@ data = {
 	],
     "experience": [
         {
+            "company": "Adaptive Investments",
+            "role": "Quantitative Research Intern",
+            "location": "Boston",
+            "from": "June 2024",
+            "to": "August 2024",
+            "logo": "adaptive.jpg",
+            "desc": [
+                "Developed and refined mathematical models and algorithms for pricing, risk analytics and trade recommendations in Python.",
+                "Implemented a calibrated Heston FFT pricer for equity structured notes, by deconstructing complex payoffs into European options, computing risk analytics (Greeks) analytically and numerically, achieving ~98% accuracy compared to Black-Scholes.",
+                "Enhanced risk factor decomposition (market risk, idiosyncratic risk and isolated risk) and Credit Value Adjustment (CVA) calculations using hazard rates and survival probabilities to support more comprehensive portfolio risk management."
+            ]
+        },
+        {
             "company": "FinIQ Consulting Pvt. Ltd.",
             "role": "Application Consultant",
             "location": "Pune",
@@ -43,10 +56,11 @@ data = {
             "to": "August 2023",
             "logo": "FinIQ.jpg",
             "desc": [
-                "Developed path dependent payoff modelling scripts for OTC (Notes, Options and Swaps) EQD (Equity Derivatives) products cataloging various features according to client specifications provided in each product termsheet.",
-                "Configured interfaces enabling RFQ (Request for Quote) acquisition and validation, sending quotes, OMS workflow management, post-trade document generation and Murex booking XML generation via 4 channels across 6 structured derivatives.",
-                "Engineered a complex multi-distributor system by collaborating with onshore and offshore teams utilizing a configuration tool which culminated in the investment bank onboarding 4 new private bank clients.",
-				"Interacted with multiple overseas clients on-site, engaging directly with their management teams and technical leads.",
+                "Product developer (structurer) in a FinTech firm offering software solutions to clients trading complex structured equity derivatives.",
+                "Developed path-dependent payoff models for OTC equity derivatives (Notes, Options, Swaps) to optimize pricing accuracy.",
+                "Configured product lifecycle from RFQ acquisition, OMS workflow, to Murex booking, improving execution efficiency.",
+                "Spearheaded the development of a multi-distributor trading system, increasing client trading volume by 30% through a $3.5M initiative, handling ~10,000 daily quote requests that were previously managed manually.",
+                "Collaborated with clients on-site in Spain and Malaysia, engaging directly with their senior management and technical leads."
             ],
         },{
             "company": "FinIQ Consulting Pvt. Ltd",
@@ -58,24 +72,47 @@ data = {
             "desc": [
 				"Designed and implemented a comprehensive dashboard for Relationship Managers using HTML, CSS, and Django framework incorporating a live financial news feed by web scraping news articles to give insight into popularly traded stocks, indices, and commodities; termsheet document clustering using NLP and Scikit-Learn.",
 				"Researched Quantum Computing and its applications in finance; and engaged in researching d3.js, exploring its capabilities across different use cases, and facilitating enhancement of the user experience of FinIQ's product offerings.",
-			],
+			]
         }
 	],
     "projects": [
+        {
+            "title": "Generating a Macroeconomic Narrative using Time Series Clustering",
+            "from": "September 2024",
+            "to": "December 2024",
+            "logo": "greenmantle.webp",
+            "desc": [
+                "Developed time-series clustering models on intraday futures data using K-Means and GMM to assess market reactions to macroeconomic events, leveraging feature engineering and event-type importance to extract key investment insights.",
+                "Developed expertise in interpreting complex relationships within data using tools such as XGBoost, Decision Trees, and SHAP analysis, by identifying feature interactions and distinguishing unique patterns for refining systematic investment research."
+            ]
+        },
+        {
+            "title": "Macroeconomic Indicators affecting 10Y Treasury Yield",
+            "from": "September 2024",
+            "to": "December 2024",
+            "logo": "cornell.webp",
+            "desc": ["Built and optimized XGBoost and LSTM model for explaining 10-Year Treasury Yields, achieving 94.87% accuracy; identifying critical macroeconomic drivers such as Fed Funds Rate, Inflation, and Bond Index to optimize forecasting precision."]
+        },
+        {
+            "title": "Machine Learning Techniques for Stock Price Forecasting",
+            "from": "September 2024",
+            "to": "December 2024",
+            "logo": "cornell.webp",
+            "desc": ["Engineered CNN and Encoder-based models to predict stock prices with a 30-day forecast horizon; optimized convolutional layers, attention mechanisms, and hyperparameters, achieving robust trend prediction using advanced time series analysis."]
+        },
         {
             "title": "Dynamic Hedging using Black-Scholes-Merton model",
             "from": "July 2023",
             "to": "August 2023",
             "logo": "cornell.webp",
-            "desc":["Simulation of pricing and delta-hedging vanilla options in python using the Black-Scholes model by creating a self-financing trading strategy.",
-			],
+            "desc": ["Implemented pricing and delta-hedging of vanilla options using the Black-Scholes model, applying stochastic calculus techniques for risk-neutral valuation and dynamic position adjustments by creating a self-financing trading strategy."]
         },{
             "title": "Child Cry Classification, Bird Song Classification",
             "from": "July 2020",
             "to": "April 2021",
             "logo": "FinIQ.jpg",
 			"link": ["https://ieeexplore.ieee.org/document/9418129"],
-            "desc":[
+            "desc": [
 				"V. Korde et al., 'Child Cry Classification - An Analysis of Features and Models', 2021 6th International Conference for Convergence in Technology (I2CT).",
                 "Led a team of 4 to study and classify the characteristic features of audios by formulating machine learning and deep learning algorithms; achieved 99.56% accuracy using optimized CNN.",
             ],
@@ -87,7 +124,7 @@ data = {
             "from": "August 2021",
             "to": "June 2023",
             "logo": "FinIQ.jpg",
-            "desc":["Actively participated online and on-campus hiring, interviewing 30+ students.",
+            "desc": ["Actively participated online and on-campus hiring, interviewing 30+ students.",
 			],
         },
         {
@@ -95,7 +132,7 @@ data = {
             "from": "August 2021",
             "to": "June 2023",
             "logo": "FinIQ.jpg",
-            "desc":["Conducted technical training workshops for new hires: 50+ on-site and overseas employees.",
+            "desc": ["Conducted technical training workshops for new hires: 50+ on-site and overseas employees.",
 			],
         },
         {
@@ -103,26 +140,17 @@ data = {
             "from": "March 2019",
             "to": "March 2021",
             "logo": "COEP.webp",
-            "desc":["Actively participated in the review and evaluation of syllabus and curriculum with all department faculty at annual meetings to ensure their alignment with both - the industry standards and the needs of the student community.",
+            "desc": ["Actively participated in the review and evaluation of syllabus and curriculum with all department faculty at annual meetings to ensure their alignment with both - the industry standards and the needs of the student community.",
 			],
         },{
             "title": "Campus Ambassador, National Engineering Olympiad",
             "from": "March",
             "to": "April 2020",
             "logo": "COEP.webp",
-            "desc":[
-				"Encouraged participation in the Olympiad across multiple schools and departments, promoting a competitive spirit.",
+            "desc": ["Encouraged participation in the Olympiad across multiple schools and departments, promoting a competitive spirit.",
             ],
         }
     ],
     "interests": ["Mensa (99+)", "Indian Classical Singing", "Photography", "Reading", "Learning Languages", "Ukulele"
-	],
-    "bg_icon": [
-        "inr.jpeg", "flask.png", "poker.jpeg",
-		"java.png", "gbp.jpeg", "html.png", "eth.jpeg",
-		"css.png", "math.webp", "eur.jpeg", "bootstrap.png",
-		"btc.jpg", "mysql.png", "usd.jpeg", "cpp.png", "js.png",
-		"gaussian.jpeg", "settings.jpg", "jpy.jpeg", "api.png",
-		"cash.webp", "python.png", "statistics.png", "db.png",
-    ],
+	]
 }
