@@ -52,8 +52,8 @@ data = {
             "company": "FinIQ Consulting Pvt. Ltd.",
             "role": "Application Consultant",
             "location": "Pune",
-            "from": "June 2023",
-            "to": "August 2023",
+            "from": "June 2021",
+            "to": "June 2023",
             "logo": "FinIQ.jpg",
             "desc": [
                 "Product developer (structurer) in a FinTech firm offering software solutions to clients trading complex structured equity derivatives.",
@@ -66,8 +66,8 @@ data = {
             "company": "FinIQ Consulting Pvt. Ltd",
             "role": "Software Engineering Intern",
             "location": "Pune",
-            "from": "March 2022",
-            "to": "June 2022",
+            "from": "April 2020",
+            "to": "June 2020",
             "logo": "FinIQ.jpg",
             "desc": [
 				"Designed and implemented a comprehensive dashboard for Relationship Managers using HTML, CSS, and Django framework incorporating a live financial news feed by web scraping news articles to give insight into popularly traded stocks, indices, and commodities; termsheet document clustering using NLP and Scikit-Learn.",
@@ -102,8 +102,8 @@ data = {
         },
         {
             "title": "Dynamic Hedging using Black-Scholes-Merton model",
-            "from": "July 2023",
-            "to": "August 2023",
+            "from": "November 2023",
+            "to": "December 2023",
             "logo": "cornell.webp",
             "desc": ["Implemented pricing and delta-hedging of vanilla options using the Black-Scholes model, applying stochastic calculus techniques for risk-neutral valuation and dynamic position adjustments by creating a self-financing trading strategy."]
         },{
