@@ -28,7 +28,7 @@ data = {
             "major": "Electronics and Telecommunication Engineering",
             "minor": "Computer Engineering",
             "logo": "COEP.webp",
-            "grade": "GPA: 9.4/10",
+            "grade": "GPA: 9.4/10, Rank: 1 (equivant to summa cum laude)",
             "desc": [
                 "Linear Algebra", "Multivariate Calculus", "Differential Equations", "Data Structures", "Probability and Statistics", "Stochastic Processes", "Image Processing", "Information Theory", "Speech Processing"
 			],
