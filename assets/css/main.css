@@ -82,6 +82,12 @@ body {
     box-shadow: 0 0 12px black;
 } */
 
+.dock {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
 .dock img{
     margin: 2px;
     width: auto;
@@ -89,10 +95,47 @@ body {
     height: 50px;
     transition: all 0.4s;
     transform-origin: 50% 100%;
+    object-fit: contain;
+    display: block;
 }
+
 .dock img:hover{
     margin: 0 30px;
     transform: scale(1.6);
+}
+
+.dock-item {
+    display: flex;
+    gap: 40px;
+  }
+
+.dock-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dock-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 10px !important;
+    font-size: 14px;
+    font-family: "GT America", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    border: 10px;
+    border-radius: 6px;
+    background-color: #4b0082;
+    color: #e6ccff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+  
+button:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
