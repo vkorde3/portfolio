@@ -32,11 +32,17 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--primary-navy);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 /* Particles Background */
@@ -52,7 +58,7 @@ body {
 
 /* Header Section */
 .header {
-  /* remove fixed viewport locking */
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -105,6 +111,7 @@ body {
 
 /* Dock Navigation */
 .dock {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin-top: 2rem;
 }
 
