@@ -41,7 +41,7 @@ body {
 
 /* Particles Background */
 #particles-js {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -52,33 +52,35 @@ body {
 
 /* Header Section */
 .header {
-  height: 100vh;
+  /* remove fixed viewport locking */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
   position: relative;
-  z-index: 2;
+  z-index: 100;
+
   background: linear-gradient(rgba(11, 20, 38, 0.8), rgba(26, 35, 50, 0.8)),
-              url('https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;
+              url('https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')
+              center/cover no-repeat;
 }
 
 .header::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0; /* shorthand for top/left/right/bottom: 0 */
   background: linear-gradient(45deg, rgba(37, 99, 235, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
   z-index: 1;
 }
 
 .header > * {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* ensure content stays above gradients */
 }
+
 
 .site-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -223,6 +225,9 @@ section {
   margin: 2rem auto;
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
+  position: relative;
+  margin-top: 0;
+  z-index: 1;
 }
 
 .user-details {
@@ -433,7 +438,7 @@ section {
 .card_logo {
   width: 80px;
   height: 80px;
-  background: var(--surface-dark);
+  background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -467,8 +472,8 @@ section {
 }
 
 .card_item {
-  flex: 1;
-  max-width: 45%;
+  flex: 1 1 80%; /* allow to grow up to ~80% of the container width */
+  max-width: none; /* remove fixed max width */
   background: var(--surface-dark);
   padding: 2rem;
   border-radius: 16px;
