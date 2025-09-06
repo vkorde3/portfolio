@@ -102,6 +102,22 @@ data.projects.forEach(function (item, idx){
     content += '<div class="card_item">';
     content += '<div class="card_title">' + item.title + '</div>';
     content += '<div class="inner_card_date">' + item.from + " - " + item.to + '</div>';
+    
+    // Add performance metrics if available
+    if('metrics' in item) {
+        content += '<div class="performance-metrics">';
+        Object.keys(item.metrics).forEach(function(key) {
+            var value = item.metrics[key];
+            var isPositive = value.includes('%') || value.includes('+') || parseFloat(value) > 0;
+            var metricClass = isPositive ? 'positive' : '';
+            content += '<div class="metric-card">';
+            content += '<div class="metric-value ' + metricClass + '">' + value + '</div>';
+            content += '<div class="metric-label">' + key.replace(/_/g, ' ').toUpperCase() + '</div>';
+            content += '</div>';
+        });
+        content += '</div>';
+    }
+    
     content += '<div class="card_content">' + ls + '</div>';
     content += '</div>';
     content += '</div>';
