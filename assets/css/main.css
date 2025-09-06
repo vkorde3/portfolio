@@ -211,7 +211,7 @@ body {
 /* Main Content Sections */
 section {
   padding: 5rem 2rem;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -226,7 +226,6 @@ section {
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
   position: relative;
-  margin-top: 0;
   z-index: 1;
 }
 
@@ -473,7 +472,7 @@ section {
 
 .card_item {
   flex: 1 1 80%; /* allow to grow up to ~80% of the container width */
-  max-width: none; /* remove fixed max width */
+  max-width: 100%; /* remove fixed max width */
   background: var(--surface-dark);
   padding: 2rem;
   border-radius: 16px;
