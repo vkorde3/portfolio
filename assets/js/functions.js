@@ -1,6 +1,5 @@
 var headerHeight =  $("#header").outerHeight(),
-    introHeight = $(window).height() - headerHeight;
-$('#intro').height(introHeight);
+    introHeight = $(window).height();
 
 // Initialize particles.js with financial theme
 particlesJS("particles-js", {
