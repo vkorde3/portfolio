@@ -116,23 +116,7 @@ data.projects.forEach(function (item, idx) {
     content += '<div class="card_item">';
     content += '<div class="card_title">' + item.title + '</div>';
     content += '<div class="card_subtitle">' + item.company + '</div>';
-    content += '<div class="inner_card_date">' + item.from + " - " + item.to + '</div>';
-    
-    // Add performance metrics if available
-    if('metrics' in item) {
-        content += '<div class="performance-metrics">';
-        Object.keys(item.metrics).forEach(function(key) {
-            var value = item.metrics[key];
-            var isPositive = value.includes('%') || value.includes('+') || parseFloat(value) > 0;
-            var metricClass = isPositive ? 'positive' : '';
-            content += '<div class="metric-card">';
-            content += '<div class="metric-value ' + metricClass + '">' + value + '</div>';
-            content += '<div class="metric-label">' + key.replace(/_/g, ' ').toUpperCase() + '</div>';
-            content += '</div>';
-        });
-        content += '</div>';
-    }
-    
+    content += '<div class="inner_card_date">' + dateRange + '</div>';
     content += '<div class="card_content">' + ls + '</div>';
     content += docLink;
     content += '</div>';
@@ -173,3 +157,21 @@ data.interests.forEach(function (item, idx, arr){
     var bullet = idx !== arr.length - 1 ? '\t|\t' : ''; // Unicode bullet symbol
     $('#interests').find('.timeline_block').append(item + bullet);
 });
+
+
+// projects.html
+
+item.docs.forEach(function (doc) {   // assuming you can have multiple docs
+  var ext = doc.split('.').pop().toLowerCase();
+  var cardContent = '';
+
+  if (ext === 'pdf') {
+    cardContent = '<iframe src="./assets/projects/' + doc + '" frameborder="0"></iframe>';
+  } else {
+    cardContent = '<a href="./assets/projects/' + doc + '" target="_blank">View Document</a>';
+  }
+
+  var card = '<div class="carousel-card">' + cardContent + '</div>';
+  $('.pdf-carousel .carousel-track').append(card);
+});
+
