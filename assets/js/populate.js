@@ -141,3 +141,21 @@ data.interests.forEach(function (item, idx, arr){
     var bullet = idx !== arr.length - 1 ? '\t|\t' : ''; // Unicode bullet symbol
     $('#interests').find('.timeline_block').append(item + bullet);
 });
+
+
+// projects.html
+
+item.docs.forEach(function (doc) {   // assuming you can have multiple docs
+  var ext = doc.split('.').pop().toLowerCase();
+  var cardContent = '';
+
+  if (ext === 'pdf') {
+    cardContent = '<iframe src="./assets/projects/' + doc + '" frameborder="0"></iframe>';
+  } else {
+    cardContent = '<a href="./assets/projects/' + doc + '" target="_blank">View Document</a>';
+  }
+
+  var card = '<div class="carousel-card">' + cardContent + '</div>';
+  $('.pdf-carousel .carousel-track').append(card);
+});
+

@@ -84,7 +84,8 @@ data = {
             "desc": [
                 "Developed time-series clustering models on intraday futures data using K-Means and GMM to assess market reactions to macroeconomic events, leveraging feature engineering and event-type importance to extract key investment insights.",
                 "Developed expertise in interpreting complex relationships within data using tools such as XGBoost, Decision Trees, and SHAP analysis, by identifying feature interactions and distinguishing unique patterns for refining systematic investment research."
-            ]
+            ],
+            "doc": "Greenmantle.pdf"
         },
         {
             "title": "Macroeconomic Indicators affecting 10Y Treasury Yield",
