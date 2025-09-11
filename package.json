@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/vkorde3/portfolio) [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://vkorde3.github.io/portfolio/) [![Author](https://img.shields.io/badge/Author-Vishakha%20Korde-blue.svg)](https://www.linkedin.com/in/vishakha-korde/) [![Latest Release](https://img.shields.io/badge/Latest%20Release-04%20April%202025-yellow.svg)](https://github.com/vkorde3/portfolio/commit/master)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -51,7 +51,7 @@ data.education.forEach(function (item, idx){
     $('#education').find('.timeline_list').append(content);
 });
 
-data.experience.forEach(function (item, idx){
+data.experience.forEach(function (item, idx) {
     var logo = '<div class="card_logo_box">';
     logo += '<div class="card_logo">';
     logo += '<img src="./assets/icons/logos/' + item.logo + '">';
@@ -59,55 +59,71 @@ data.experience.forEach(function (item, idx){
     logo += '</div>';
 
     var ls = '<ul>';
-    item.desc.forEach(function (item){ ls += '<li>' + item + '</li>'; });
+    item.desc.forEach(function (descItem) { ls += '<li>' + descItem + '</li>'; });
     ls += '</ul>';
+
+    var dateRange = item.from + " - " + item.to;
+
+    var docLink = item.doc
+        ? '<div class="card_doc"><a href="./assets/projects/' + item.doc + '" target="_blank">View Document</a></div>'
+        : '';
 
     var content = '<div class="timeline_item">';
     content += '<div class="card_info">';
-    if(idx%2===0) content += logo;
-    content += '<div class="card_date">' + item.from + " - " + item.to + '</div>';
-    if(idx%2!==0) content += logo;
+    if (idx % 2 === 0) content += logo;
+    content += '<div class="card_date">' + dateRange + '</div>';
+    if (idx % 2 !== 0) content += logo;
     content += '</div>';
 
     content += '<div class="card_item">';
     content += '<div class="card_title">' + item.company + '</div>';
     content += '<div class="card_subtitle">' + item.location + '</div>';
     content += '<div class="card_role">' + item.role + '</div>';
-    content += '<div class="inner_card_date">' + item.from + " - " + item.to + '</div>';
+    content += '<div class="inner_card_date">' + dateRange + '</div>';
     content += '<div class="card_content">' + ls + '</div>';
+    content += docLink;
     content += '</div>';
     content += '</div>';
 
     $('#experience').find('.timeline_list').append(content);
 });
 
-data.projects.forEach(function (item, idx){
+
+data.projects.forEach(function (item, idx) {
     var logo = '<div class="card_logo_box">';
     logo += '<div class="card_logo">';
     logo += '<img src="./assets/icons/logos/' + item.logo + '">';
     logo += '</div>';
     logo += '</div>';
-	
+
     var ls = '<ul>';
-    item.desc.forEach(function (item){ ls += '<li>' + item + '</li>'; });
+    item.desc.forEach(function (descItem) { ls += '<li>' + descItem + '</li>'; });
     ls += '</ul>';
+
+    var dateRange = item.from + " - " + item.to;
+
+    var docLink = item.doc 
+        ? '<div class="card_doc"><a href="./assets/projects/' + item.doc + '" target="_blank">View Document</a></div>'
+        : '';
 
     var content = '<div class="timeline_item">';
     content += '<div class="card_info">';
-    if(idx%2===0) content += logo;
-    content += '<div class="card_date">' + item.from + " - " + item.to + '</div>';
-    if(idx%2!==0) content += logo;
+    if (idx % 2 === 0) content += logo;
+    content += '<div class="card_date">' + dateRange + '</div>';
+    if (idx % 2 !== 0) content += logo;
     content += '</div>';
 
     content += '<div class="card_item">';
     content += '<div class="card_title">' + item.title + '</div>';
-    content += '<div class="inner_card_date">' + item.from + " - " + item.to + '</div>';
+    content += '<div class="card_subtitle">' + item.company + '</div>';
+    content += '<div class="inner_card_date">' + dateRange + '</div>';
     content += '<div class="card_content">' + ls + '</div>';
+    content += docLink;
     content += '</div>';
     content += '</div>';
 
     $('#projects').find('.timeline_list').append(content);
-}); 
+});
 
 data.leadership.forEach(function (item, idx){
     var logo = '<div class="card_logo_box">';
@@ -141,3 +157,21 @@ data.interests.forEach(function (item, idx, arr){
     var bullet = idx !== arr.length - 1 ? '\t|\t' : ''; // Unicode bullet symbol
     $('#interests').find('.timeline_block').append(item + bullet);
 });
+
+
+// projects.html
+
+item.docs.forEach(function (doc) {   // assuming you can have multiple docs
+  var ext = doc.split('.').pop().toLowerCase();
+  var cardContent = '';
+
+  if (ext === 'pdf') {
+    cardContent = '<iframe src="./assets/projects/' + doc + '" frameborder="0"></iframe>';
+  } else {
+    cardContent = '<a href="./assets/projects/' + doc + '" target="_blank">View Document</a>';
+  }
+
+  var card = '<div class="carousel-card">' + cardContent + '</div>';
+  $('.pdf-carousel .carousel-track').append(card);
+});
+
