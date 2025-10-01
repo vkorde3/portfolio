@@ -36,6 +36,20 @@ data = {
 	],
     "experience": [
         {
+            "company": "ValidityBase",
+            "role": "Quantitative Research Intern",
+            "location": "New York",
+            "from": "March 2025",
+            "to": "Current",
+            "logo": "vbase.svg",
+            "desc": [
+                "Built a Python pipeline for a residual momentum-based tactical asset allocation strategy using point-in-time robust regressions with exponential weighting, demonstrated consistent alpha generation and improved risk-adjusted returns across sectors.",
+                "Conducted comprehensive backtesting and performance analysis of the strategy using historical market data, showcasing its effectiveness in various market conditions and its potential to enhance portfolio performance.",
+                "Developed expertise in quantitative research methodologies, statistical analysis, and financial modeling, contributing to the firm's research initiatives and enhancing the overall investment process."
+            ],
+            "doc": "vbase.pdf"
+        },
+        {
             "company": "Adaptive Investments",
             "role": "Quantitative Research Intern",
             "location": "Boston",
@@ -81,6 +95,7 @@ data = {
             "from": "September 2024",
             "to": "December 2024",
             "logo": "greenmantle.webp",
+            "link": ["https://github.com/vkorde3/capstoneGreenmantle"],
             "desc": [
                 "Developed time-series clustering models on intraday futures data using K-Means and GMM to assess market reactions to macroeconomic events, leveraging feature engineering and event-type importance to extract key investment insights.",
                 "Developed expertise in interpreting complex relationships within data using tools such as XGBoost, Decision Trees, and SHAP analysis, by identifying feature interactions and distinguishing unique patterns for refining systematic investment research."
@@ -92,14 +107,18 @@ data = {
             "from": "September 2024",
             "to": "December 2024",
             "logo": "cornell.webp",
-            "desc": ["Built and optimized XGBoost and LSTM model for explaining 10-Year Treasury Yields, achieving 94.87% accuracy; identifying critical macroeconomic drivers such as Fed Funds Rate, Inflation, and Bond Index to optimize forecasting precision."]
+            "link": ["https://github.com/vkorde3/asset_management"],
+            "desc": ["Built and optimized XGBoost and LSTM model for explaining 10-Year Treasury Yields, achieving 94.87% accuracy; identifying critical macroeconomic drivers such as Fed Funds Rate, Inflation, and Bond Index to optimize forecasting precision."],
+            "doc": "Asset_Management.pdf"
         },
         {
             "title": "Machine Learning Techniques for Stock Price Forecasting",
             "from": "September 2024",
             "to": "December 2024",
             "logo": "cornell.webp",
-            "desc": ["Engineered CNN and Encoder-based models to predict stock prices with a 30-day forecast horizon; optimized convolutional layers, attention mechanisms, and hyperparameters, achieving robust trend prediction using advanced time series analysis."]
+            "link": ["https://github.com/vkorde3/stock_forecasting"],
+            "desc": ["Engineered CNN and Encoder-based models to predict stock prices with a 30-day forecast horizon; optimized convolutional layers, attention mechanisms, and hyperparameters, achieving robust trend prediction using advanced time series analysis."],
+            "doc": "Stock_Forecasting.pdf"
         },
         {
             "title": "Dynamic Hedging using Black-Scholes-Merton model",
@@ -112,11 +131,12 @@ data = {
             "from": "July 2020",
             "to": "April 2021",
             "logo": "FinIQ.jpg",
-			"link": ["https://ieeexplore.ieee.org/document/9418129"],
+			"link": ["https://ieeexplore.ieee.org/document/9418129", "https://github.com/Sarthug99/Child-Cry-Classification", "https://github.com/Sarthug99/Bird-Song-Classification"],
             "desc": [
 				"V. Korde et al., 'Child Cry Classification - An Analysis of Features and Models', 2021 6th International Conference for Convergence in Technology (I2CT).",
                 "Led a team of 4 to study and classify the characteristic features of audios by formulating machine learning and deep learning algorithms; achieved 99.56% accuracy using optimized CNN.",
             ],
+            "doc": "Research_Paper.pdf"
         }
     ],
     "leadership": [

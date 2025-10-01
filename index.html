@@ -58,6 +58,10 @@
             <button onclick="openInNewTab('https://www.linkedin.com/in/vishakha-korde/')">LinkedIn</button>
           </div>
           <div class="dock-entry">
+            <img class="icon" src="./assets/icons/dock_icons/github.png" alt="Github">
+            <button onclick="openInNewTab('https://github.com/vkorde3')">Github</button>
+          </div>
+          <div class="dock-entry">
             <img class="icon" src="./assets/icons/dock_icons/resume.png" alt="Resume">
             <button onclick="openInNewTab('https://drive.google.com/file/d/1LeLXFaEN4Za31fW_AcoTCvairWNp1R9n/view?usp=sharing')">Résumé</button>
           </div>
@@ -85,8 +89,8 @@
       <a class="link navbar-item" href="#experience" data-scroll>Experience</a>
       <a class="link navbar-item" href="#projects" data-scroll>Projects</a>
       <a class="link navbar-item" href="#leadership" data-scroll>Leadership</a>
-      <a class="link navbar-item" href="#interests" data-scroll>Interests</a>
       <a class="link navbar-item" href="#contact" data-scroll>Contact</a>
+      <a class="link navbar-item" href="#interests" data-scroll>Interests</a>
     </div>
 
     <!-- <img id="navbar-btn" src="icons/menu-white.png"> -->
@@ -230,6 +234,56 @@
         <h1>Interests</h1>
       </div>
       <div class="timeline_block about_interests"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <div class="section_block">
+      <div class="section_title">
+        <h1>Get In Touch</h1>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info fade-in">
+          <h3>Let's Connect</h3>
+          <p>I'm always interested in discussing quantitative finance, machine learning applications in trading, and potential collaboration opportunities.</p>
+          <div class="contact-links">
+            <a href="mailto:vk369@cornell.edu" class="contact-link">
+              <span>📧</span>
+              <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vishakha-korde/" target="_blank" class="contact-link">
+              <span>💼</span>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/vkorde3" target="_blank" class="contact-link">
+              <span>💻</span>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form fade-in">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
