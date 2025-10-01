@@ -7,4 +7,4 @@
 
 ![My Website](https://github.com/vkorde3/portfolio/blob/master/website.png)
 
-Please reach out to me at vk369@cornell.edu if you have any feedback or ideas for the website. Leave a :star: &nbsp;if you like it!
+Please reach out to me at vishakha.subodh.korde@gmail.com if you have any feedback or ideas for the website. Leave a :star: &nbsp;if you like it!
