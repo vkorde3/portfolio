@@ -1,11 +1,21 @@
+/**
+ * Portfolio Data
+ * Contains all content for the portfolio website
+ * Organized by sections: about, education, experience, projects, leadership, interests
+ */
+
 data = {
-    "about": ["I graduated from Cornell University with a Master’s in Financial Engineering in December 2024. I am driven by a passion for quantitative research, data-driven decision-making, and financial markets. I am a highly motivated professional, bringing a unique blend of quantitative acumen, technical proficiency, and a strong work ethic to any organization. With a proven track record in finance and technology, I have successfully delivered value through structured financial product configuration, intricate payoff calculations, and risk analytics.",
+    // About section - personal introduction
+    "about": [
+        "I graduated from Cornell University with a Master's in Financial Engineering in December 2024. I am driven by a passion for quantitative research, data-driven decision-making, and financial markets. I am a highly motivated professional, bringing a unique blend of quantitative acumen, technical proficiency, and a strong work ethic to any organization. With a proven track record in finance and technology, I have successfully delivered value through structured financial product configuration, intricate payoff calculations, and risk analytics.",
         "",
         "During my tenure as an Application Consultant at FinIQ Consulting, I spearheaded high-impact projects, showcasing my analytical abilities and attention to detail. Leading training workshops and collaborating on complex initiatives highlight my leadership skills and proactive approach. Proficient in Python and C/C++, I leverage technology to solve sophisticated financial challenges, from pricing models to systematic trading strategies.",
         "",
         "I am always eager to explore innovative approaches to quantitative finance and collaborate on impactful projects.",
-     ],
-    "education":[
+    ],
+    
+    // Education history
+    "education": [
         {
             "school": "Cornell University",
             "location": " Ithaca, NY, USA",
@@ -19,7 +29,8 @@ data = {
             "desc": [
                 "Investment and Portfolio Management", "Machine Learning", "Derivatives Securities", "Stochastic Calculus", "Risk Management", "Python for Finance", "Monte Carlo Simulation"
             ],
-        },{
+        },
+        {
             "school": "College of Engineering, Pune",
             "location": "Pune, Maharashtra, India",
             "from": "August 2017",
@@ -28,13 +39,29 @@ data = {
             "major": "Electronics and Telecommunication Engineering",
             "minor": "Computer Engineering",
             "logo": "COEP.webp",
-            "grade": "GPA: 9.4/10",
+            "grade": "GPA: 9.4/10, Rank: 1 (equivalent to summa cum laude)",
             "desc": [
                 "Linear Algebra", "Multivariate Calculus", "Differential Equations", "Data Structures", "Probability and Statistics", "Stochastic Processes", "Image Processing", "Information Theory", "Speech Processing"
-			],
+            ],
         }
-	],
+    ],
+    
+    // Professional experience
     "experience": [
+        {
+            "company": "ValidityBase",
+            "role": "Quantitative Research Intern",
+            "location": "New York",
+            "from": "March 2025",
+            "to": "Current",
+            "logo": "vbase.svg",
+            "desc": [
+                "Built a Python pipeline for a residual momentum-based tactical asset allocation strategy using point-in-time robust regressions with exponential weighting, demonstrated consistent alpha generation and improved risk-adjusted returns across sectors.",
+                "Conducted comprehensive backtesting and performance analysis of the strategy using historical market data, showcasing its effectiveness in various market conditions and its potential to enhance portfolio performance.",
+                "Developed expertise in quantitative research methodologies, statistical analysis, and financial modeling, contributing to the firm's research initiatives and enhancing the overall investment process."
+            ],
+            "doc": "vbase.pdf"
+        },
         {
             "company": "Adaptive Investments",
             "role": "Quantitative Research Intern",
@@ -62,7 +89,8 @@ data = {
                 "Spearheaded the development of a multi-distributor trading system, increasing client trading volume by 30% through a $3.5M initiative, handling ~10,000 daily quote requests that were previously managed manually.",
                 "Collaborated with clients on-site in Spain and Malaysia, engaging directly with their senior management and technical leads."
             ],
-        },{
+        },
+        {
             "company": "FinIQ Consulting Pvt. Ltd",
             "role": "Software Engineering Intern",
             "location": "Pune",
@@ -70,35 +98,56 @@ data = {
             "to": "June 2020",
             "logo": "FinIQ.jpg",
             "desc": [
-				"Designed and implemented a comprehensive dashboard for Relationship Managers using HTML, CSS, and Django framework incorporating a live financial news feed by web scraping news articles to give insight into popularly traded stocks, indices, and commodities; termsheet document clustering using NLP and Scikit-Learn.",
-				"Researched Quantum Computing and its applications in finance; and engaged in researching d3.js, exploring its capabilities across different use cases, and facilitating enhancement of the user experience of FinIQ's product offerings.",
-			]
+                "Designed and implemented a comprehensive dashboard for Relationship Managers using HTML, CSS, and Django framework incorporating a live financial news feed by web scraping news articles to give insight into popularly traded stocks, indices, and commodities; termsheet document clustering using NLP and Scikit-Learn.",
+                "Researched Quantum Computing and its applications in finance; and engaged in researching d3.js, exploring its capabilities across different use cases, and facilitating enhancement of the user experience of FinIQ's product offerings.",
+            ]
         }
-	],
+    ],
+    
+    // Projects portfolio
     "projects": [
+        {
+            "title": "Tactical Asset Allocation using Sector Rotation and Robust Regression",
+            "from": "March 2025",
+            "to": "Current",
+            "logo": "vbase.svg",
+            "link": ["https://github.com/vkorde3/portfolio_spdrs"],
+            "desc": [
+                "Built a Python pipeline for a residual momentum-based tactical asset allocation strategy using point-in-time robust regressions with exponential weighting, demonstrated consistent alpha generation and improved risk-adjusted returns across sectors.",
+                "Conducted comprehensive backtesting and performance analysis of the strategy using historical market data, showcasing its effectiveness in various market conditions and its potential to enhance portfolio performance.",
+                "Developed expertise in quantitative research methodologies, statistical analysis, and financial modeling, contributing to the firm's research initiatives and enhancing the overall investment process."
+            ],
+            "doc": "vbase.pdf"
+        },
         {
             "title": "Generating a Macroeconomic Narrative using Time Series Clustering",
             "from": "September 2024",
             "to": "December 2024",
             "logo": "greenmantle.webp",
+            "link": ["https://github.com/vkorde3/capstoneGreenmantle"],
             "desc": [
                 "Developed time-series clustering models on intraday futures data using K-Means and GMM to assess market reactions to macroeconomic events, leveraging feature engineering and event-type importance to extract key investment insights.",
                 "Developed expertise in interpreting complex relationships within data using tools such as XGBoost, Decision Trees, and SHAP analysis, by identifying feature interactions and distinguishing unique patterns for refining systematic investment research."
-            ]
+            ],
+            "doc": "Greenmantle.pdf"
         },
         {
             "title": "Macroeconomic Indicators affecting 10Y Treasury Yield",
             "from": "September 2024",
             "to": "December 2024",
             "logo": "cornell.webp",
-            "desc": ["Built and optimized XGBoost and LSTM model for explaining 10-Year Treasury Yields, achieving 94.87% accuracy; identifying critical macroeconomic drivers such as Fed Funds Rate, Inflation, and Bond Index to optimize forecasting precision."]
+            "link": ["https://github.com/vkorde3/asset_management"],
+            "desc": ["Built and optimized XGBoost and LSTM model for explaining 10-Year Treasury Yields, achieving 94.87% accuracy; identifying critical macroeconomic drivers such as Fed Funds Rate, Inflation, and Bond Index to optimize forecasting precision."],
+            "doc": "Asset_Management.pdf"
         },
         {
             "title": "Machine Learning Techniques for Stock Price Forecasting",
             "from": "September 2024",
             "to": "December 2024",
             "logo": "cornell.webp",
-            "desc": ["Engineered CNN and Encoder-based models to predict stock prices with a 30-day forecast horizon; optimized convolutional layers, attention mechanisms, and hyperparameters, achieving robust trend prediction using advanced time series analysis."]
+            "link": ["https://github.com/vkorde3/stock_forecasting"],
+            "desc": ["Engineered CNN and Encoder-based models to predict stock prices with a 30-day forecast horizon; optimized convolutional layers, attention mechanisms, and hyperparameters, achieving robust trend prediction using advanced time series analysis."],
+            "doc": "Stock_Forecasting.pdf"
         },
         {
             "title": "Dynamic Hedging using Black-Scholes-Merton model",
@@ -106,51 +155,60 @@ data = {
             "to": "December 2023",
             "logo": "cornell.webp",
             "desc": ["Implemented pricing and delta-hedging of vanilla options using the Black-Scholes model, applying stochastic calculus techniques for risk-neutral valuation and dynamic position adjustments by creating a self-financing trading strategy."]
-        },{
+        },
+        {
             "title": "Child Cry Classification, Bird Song Classification",
             "from": "July 2020",
             "to": "April 2021",
-            "logo": "FinIQ.jpg",
-			"link": ["https://ieeexplore.ieee.org/document/9418129"],
+            "logo": "COEP.webp",
+            "link": ["https://ieeexplore.ieee.org/document/9418129", "https://github.com/Sarthug99/Child-Cry-Classification", "https://github.com/Sarthug99/Bird-Song-Classification"],
             "desc": [
-				"V. Korde et al., 'Child Cry Classification - An Analysis of Features and Models', 2021 6th International Conference for Convergence in Technology (I2CT).",
+                "V. Korde et al., 'Child Cry Classification - An Analysis of Features and Models', 2021 6th International Conference for Convergence in Technology (I2CT).",
                 "Led a team of 4 to study and classify the characteristic features of audios by formulating machine learning and deep learning algorithms; achieved 99.56% accuracy using optimized CNN.",
             ],
+            "doc": "Research_Paper.pdf"
         }
     ],
+    
+    // Leadership roles
     "leadership": [
         {
             "title": "Assistant Hiring Manager",
             "from": "August 2021",
             "to": "June 2023",
             "logo": "FinIQ.jpg",
-            "desc": ["Actively participated online and on-campus hiring, interviewing 30+ students.",
-			],
+            "desc": ["Actively participated online and on-campus hiring, interviewing 30+ students."],
         },
         {
             "title": "Graduate Trainer",
             "from": "August 2021",
             "to": "June 2023",
             "logo": "FinIQ.jpg",
-            "desc": ["Conducted technical training workshops for new hires: 50+ on-site and overseas employees.",
-			],
+            "desc": ["Conducted technical training workshops for new hires: 50+ on-site and overseas employees."],
         },
         {
             "title": "Student representative, Board of Studies",
             "from": "March 2019",
             "to": "March 2021",
             "logo": "COEP.webp",
-            "desc": ["Actively participated in the review and evaluation of syllabus and curriculum with all department faculty at annual meetings to ensure their alignment with both - the industry standards and the needs of the student community.",
-			],
-        },{
+            "desc": ["Actively participated in the review and evaluation of syllabus and curriculum with all department faculty at annual meetings to ensure their alignment with both - the industry standards and the needs of the student community."],
+        },
+        {
             "title": "Campus Ambassador, National Engineering Olympiad",
             "from": "March 2020",
             "to": "April 2020",
             "logo": "COEP.webp",
-            "desc": ["Encouraged participation in the Olympiad across multiple schools and departments, promoting a competitive spirit.",
-            ],
+            "desc": ["Encouraged participation in the Olympiad across multiple schools and departments, promoting a competitive spirit."],
         }
     ],
-    "interests": ["Mensa (99+)", "Indian Classical Singing", "Photography", "Reading", "Learning Languages", "Ukulele"
-	]
+    
+    // Personal interests
+    "interests": [
+        "Mensa (99+)", 
+        "Indian Classical Singing", 
+        "Photography", 
+        "Reading", 
+        "Learning Languages", 
+        "Ukulele"
+    ]
 }

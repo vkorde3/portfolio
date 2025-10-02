@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects - Vishakha Korde" />
+  <meta name="author" content="Vishakha Korde" />
+  
+  <!-- Webpage Logo -->
+  <link rel="shortcut icon" href="./assets/icons/VSK.png" />
+  
+  <!-- Webpage Title -->
+  <title>Projects | Vishakha Korde</title>
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/projects.css" />
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <div id="header" class="sticky">
+    <div>
+      <a href="index.html" class="navbar-item" style="text-decoration: none;">
+        <i class="fas fa-arrow-left"></i> Vishakha Korde
+      </a>
+    </div>
+    
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    
+    <!-- Navigation Menu -->
+    <div id="navbar" class="sidebar-inactive">
+      <a class="link navbar-item" href="index.html">Home</a>
+      <a class="link navbar-item" href="index.html#projects" data-scroll>Projects</a>
+      <a class="link navbar-item" href="index.html#contact-section" data-scroll>Contact me</a>
+    </div>
+  </div>
+
+  <!-- Projects Page Content -->
+  <section id="projects-page">
+    <div class="projects-container">
+      <div class="projects-header">
+        <h1><i class="fas fa-project-diagram"></i> All Projects</h1>
+        <p>Explore my quantitative research and machine learning projects</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal for PDF Preview -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <button class="modal-close" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="project-details">
+          <div class="project-meta">
+            <span id="modal-date"></span>
+          </div>
+          <div id="modal-description"></div>
+          <div id="modal-links"></div>
+        </div>
+        <div class="pdf-viewer" id="pdf-viewer">
+          <!-- PDF will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Vishakha Korde, 2025. All rights reserved.</p>
+  </footer>
+
+  <!-- Import Custom JS -->
+  <script type="text/javascript" src="./assets/js/data.js"></script>
+  <script type="text/javascript" src="./assets/js/projects-page.js"></script>
+  <script type="text/javascript" src="./assets/js/functions.js"></script>
+</body>
+</html>
